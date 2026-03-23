@@ -1,0 +1,16 @@
+decisions:
+  - name: daily_sales_report
+    description: Daily total sales
+    requirements:
+      freshness_hours: 2
+      min_completeness: 0.95
+    sources:
+      - data_samples/sales_transactions.csv
+
+  - name: monthly_customer_churn
+    description: Monthly churn rate
+    requirements:
+      freshness_hours: 24
+      min_completeness: 0.95
+    sources:
+      - data_samples/customer_activity.csv
